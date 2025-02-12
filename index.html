@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegant Boutique</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap">
+</head>
+<body>
+    <div class="cart-icon">
+        🛒
+        <span class="cart-count">0</span>
+    </div>
+
+    <div class="cart-modal">
+        <div class="cart-modal-header">
+            <h3>Your Cart</h3>
+            <button class="close-cart">✕</button>
+        </div>
+        <div class="cart-items"></div>
+        <div class="cart-total">
+            <h4>Total: $<span>0</span></h4>
+            <button class="btn btn-primary">Checkout</button>
+        </div>
+    </div>
+
+    <div class="modal-backdrop"></div>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Discover Your Style</h1>
+            <p>Explore our curated collection of fashion-forward pieces that define the season's must-have styles.</p>
+            <a href="#shop" class="btn btn-primary">Shop Now</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="featured" id="shop">
+            <h2 class="section-title">Featured Products</h2>
+            <div class="filters">
+                <button class="filter-btn active" data-category="all">All</button>
+                <button class="filter-btn" data-category="new">New Arrivals</button>
+                <button class="filter-btn" data-category="bestseller">Bestsellers</button>
+                <button class="filter-btn" data-category="trending">Trending</button>
+            </div>
+            <div class="loading-spinner">
+                <img src="spinner.gif" alt="Loading...">
+              </div>
+            <div class="products-grid">
+                <!-- Products will be dynamically inserted here -->
+            </div>
+        </section>
+        
+        <section class="newsletter">
+            <div class="newsletter-content">
+                <h2>Subscribe to Our Newsletter</h2>
+                <p>Stay updated with our latest collections, trends, and exclusive offers.</p>
+                <form class="newsletter-form" id="newsletter-form">
+                    <input type="email" class="newsletter-input" placeholder="Enter your email" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
